@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="display-4">Welcome to Task Tracker!</h1>
+    <p class="lead">Discover the journey behind <strong>Task Tracker</strong>, your ultimate tool for mastering productivity. Explore our mission, meet our dedicated team, and learn about the milestones that have shaped us.</p>
+    <hr class="my-4">
+    <h2 class="mt-3">Our Mission</h2>
+    <p>At Task Tracker, we believe in empowering individuals and teams to reach their fullest potential. Our mission is to provide a seamless and intuitive task management solution that helps you stay organized and achieve your goals.</p>
+    <h2 class="mt-3">Our Team</h2>
+    <div class="d-flex align-items-center">
+        <img src="{% static 'img/adam.jpg' %}" style="width: 30%;">
+        <p class="flex-fill mx-3">Task Tracker is built by a passionate team of developers, designers, and productivity enthusiasts committed to making your tasks manageable and your days more productive.</p>
+        
+    </div>
+
+    <h2 class="mt-3">Our History</h2>
+    <p>Founded in 2021, Task Tracker started as a small project aimed at solving personal productivity challenges. Since then, it has grown into a trusted tool used by thousands across the globe, helping users stay on track and maximize their day.</p>
+</div>
+{% endblock %}
